@@ -1,0 +1,22 @@
+{
+  "name": "proto_bot",
+  "version": "0.0.1",
+  "description": "This is a prototype of chatbot.",
+  "main": "index.js",
+  "author": "ushumpei",
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir lib --source-maps inline",
+    "watch": "babel src --out-dir lib --watch --source-maps inline"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
