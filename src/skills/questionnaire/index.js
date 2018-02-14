@@ -8,7 +8,7 @@ import {
 } from './threads'
 
 export default (controller) => {
-  controller.on(['message_received'], (bot, message) => {
+  controller.on(['hello', 'message_received'], (bot, message) => {
     bot.startConversation(message, (err, convo) => {
       if (err) throw err
       convo.say('Hello')
